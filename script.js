@@ -47,7 +47,6 @@ function newQuote() {
 //Get quotes from API
 async function getQuote() {
   loading();
-  //We need to use a Proxy Url to make our API call in order to avoid
   const proxyUrl = "https://afternoon-oasis-38920.herokuapp.com/";
   const apiUrl = "https://type.fit/api/quotes";
 
@@ -63,7 +62,7 @@ async function getQuote() {
 //Tweet Quote
 function tweetQuote() {
   const twitterUrl =
-    "https://twitter.com/intent/tweet?text=${quoteText.innerText} - ${authorText.innerText}";
+    "https://twitter.com/intent/tweet?text=";
   window.open(twitterUrl, "_blank");
 }
 
